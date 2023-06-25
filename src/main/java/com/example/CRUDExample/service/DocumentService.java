@@ -1,18 +1,17 @@
 package com.example.CRUDExample.service;
 
-import com.example.CRUDExample.model.Document;
-import com.example.CRUDExample.repo.DocumentRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.example.CRUDExample.model.Document;
+import com.example.CRUDExample.repo.DocumentRepository;
 
 @Service
 public class DocumentService {
 
     private final DocumentRepository documentRepository;
 
-    @Autowired
     public DocumentService(DocumentRepository documentRepository) {
         this.documentRepository = documentRepository;
     }
